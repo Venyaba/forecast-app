@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Route, Switch, Redirect} from "react-router-dom";
+import {Route, Switch} from "react-router-dom";
 import './App.css';
 import WeatherList from './containers/WeatherList'
 import WeatherCityList from './containers/WeatherCityListContainer'
@@ -16,7 +16,6 @@ class App extends Component {
                   <Route exact path='/weather/:city' component={WeatherList}/>
                     <Route path='/weather' component={WeatherCityList}/>
                 </Switch>
-              {/*<WeatherList/>*/}
             </div>
         );
     }
@@ -24,7 +23,3 @@ class App extends Component {
 
 
 export default App;
-
-{/*<WeatherCityList/>*/}
-{/*<WeatherList/>*/}
-{/*<SearchForm/>*/}
